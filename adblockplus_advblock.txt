@@ -1,4 +1,4 @@
-[Adblock Plus 2.0]
+﻿[Adblock Plus 2.0]
 .animevost.org
 4biznes.pp.ua
 abbigli.com
@@ -5986,8 +5986,6 @@ probakterii.ru
 smotri.com
 seedoff.cc
 meduza.io
-kinogo-onlaine.net
-kinogo-onlaine.net
 lifehacker.ru
 e-reading.club
 samods.ru
@@ -6227,7 +6225,7 @@ prankota.com
 copypast.ru
 sochi.camera
 kinogb.me
-kinokrad.biz
+
 comss.ru
 new-rutor.org
 mmgp.ru
@@ -6761,7 +6759,6 @@ ebooktime.net
 ikinohd.club
 newstudio.tv
 pravda.if.ua
-kinokrad-hd720.ru
 happy-hack.ru
 russian7.ru
 xn--80acvefn6a4c.xn--p1ai
@@ -7067,7 +7064,6 @@ factroom.ru
 openssource.biz
 sport-express.ru
 chehov-vid.ru
-kinogo-720.club
 kakprosto.ru
 sport-express.ru
 kino24x7.com
@@ -7788,7 +7784,7 @@ factroom.ru
 notik.ru
 waitpost.ru
 bountyporn.com
-kinokrad-hd-720.net
+
 mmotop.ru
 uaexpert.blogspot.com
 novafilm.tv
@@ -7923,7 +7919,6 @@ the-rutor.org
 freakenergy.ru
 znaigorod.ru
 tods-blog.com.ua
-kinogo-720.co
 humor.fm
 finanz.ru
 uzum.tv
@@ -8594,6 +8589,7 @@ cod31.ru
 dimonvideo.ru
 auto-kmu.ru
 zserials.ru
+
 torentor.co
 computerra.ru
 lib.rus.ec
@@ -10402,6 +10398,7 @@ liveresult.ru
 tapochek.net
 forum.watch.ru
 onlyf.ws
+kinogo.club
 sxn.today
 topvideo.tj
 ikovrov.ru
@@ -11328,6 +11325,7 @@ banners2.orangeapps.ru/
 bash.im/_sq.php
 bashskazki.ru/assets/images/tudyt/
 bashskazki.ru/assets/modules/easyadvertising/
+baskino.online/images/player-
 batpic.com/p/
 baumanki.net/templates/open-slaed/img/ban
 bazr.ru/player?playlist
@@ -14964,22 +14962,10 @@ leanforum.ru
 fabrikant.ru
 texts.com.ua
 mts.ru
-kinogo-720.net
--fan.ru/images/ad.jpg
--teasers-
-.com/ads?
-.custom.min.js
-.soundcloud.com/player.swf?url=
-.swf?purl=
-://ads.
-://ads.
-_ad.php?
-https://www.kinopoisk.ru
-https://www.youtube.com
+www.kinopoisk.ru
 100pravda.com/includes/ads_kola/
 185.38.12.
-185.38.12.
-37.220.36.15/video/
+37.220.36.15
 7771000.ru/images/
 900.md/ads/images/
 900.md/ads/js/
@@ -14987,16 +14973,11 @@ a-d-k.ru/bitrix/templates/ad/
 a.votpusk.ru/img/
 acint.net/aci.js
 ad.admitad.com
-ad.mail.ru/static/admanhtml/
-ad.mail.ru/vast/
 ad.mail.ru
 ad4.liverail.com/?LR_PUBLISHER_ID=
 adcast.ru/mtsweb?
 adengine.rt.ru
 adex-plitka.ru
-adfox.ru/
-adfox.ru
-adfox.ru
 adguard.com/images/logo
 adhub.ru
 adman.com
@@ -15013,13 +14994,9 @@ adriver.ru/cgi-bin/rle.cgi?
 adriver.ru/images/
 adriver.ru/plugins/
 adriver.ru
-ads.adfox.ru/
-ads.adfox.ru/crossdomain.xml
-ads.adfox.ru
 ads.adfox.ru
 ads.co.ua
 ads.echo.msk.ru/images/
-ads.moscow
 ads.moscow
 ads.rb.ru/video_banner.php
 ads.setby.net
@@ -15557,7 +15534,6 @@ iomedia.ru/static/adsbygoogle.js
 is.luxcdn.com//i/amn-logo-84x24.png
 it-like.ru/wp-content/themes/itlike/
 ivbt.ru
-kinokrad.co/templates/all/ads.js
 kinosib.tv/templates/kinosib/js/reklama.js
 kodik.cc/player/js/ads.js
 kopilochka.net.ru

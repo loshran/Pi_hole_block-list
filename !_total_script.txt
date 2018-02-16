@@ -1,0 +1,48 @@
+curl -o origin/zero.txt http://someonewhocares.org/hosts/zero/hosts
+sed 's/^\x7C\x7C//;s/#0.0.0.0 //g;s/0.0.0.0 //g' origin/zero.txt | sed '/#/d;s/^[ \t]*//;s/[ \t]*$//;/^* $/d'> zero.txt
+curl -o origin/adblockplus_malwaredomains_full.txt https://easylist-downloads.adblockplus.org/malwaredomains_full.txt 
+cut -d"#" -f-1 origin/adblockplus_malwaredomains_full.txt |cut -d"+" -f-1 | cut -d"^" -f-1 | cut -d"$" -f-1 | cut -d"*" -f-1 | cut -d"," -f-1 | cut -d"~" -f-1 | cut -d"&" -f-1 | sed 's/|$script,~third-party//g;s/|,~third-party//g;s/|$stylesheet//g;s/$script//g;s/$third-party//g;s/^\x7C\x7C//;s/^@@//;s/^\x7C\x7C//;s/^@@//;/*/d;/#@#/d;s/^\x2f/##/;/##/d;/!/d;/*\x2f\x2f*/d;/^$/d;s/^\x2f/##/;/##/d;/^\x7C/d;/!/d' | cut -d"|" -f-1 > adblockplus_malwaredomains_full.txt
+curl -o origin/adblockplus_easyprivacy.txt https://easylist-downloads.adblockplus.org/easyprivacy.txt
+cut -d"#" -f-1 origin/adblockplus_easyprivacy.txt |cut -d"+" -f-1 | cut -d"^" -f-1 | cut -d"$" -f-1 | cut -d"*" -f-1 | cut -d"," -f-1 | cut -d"~" -f-1 | cut -d"&" -f-1 | sed 's/|$script,~third-party//g;s/|,~third-party//g;s/|$stylesheet//g;s/$script//g;s/$third-party//g;s/^\x7C\x7C//;s/^@@//;s/^\x7C\x7C//;s/^@@//;/*/d;/#@#/d;s/^\x2f/##/;/##/d;/!/d;/*\x2f\x2f*/d;/^$/d;s/^\x2f/##/;/##/d;/^\x7C/d;/!/d' | cut -d"|" -f-1 > adblockplus_easyprivacy.txt
+curl -o origin/adblockplus_easylist.txt https://easylist-downloads.adblockplus.org/easylist.txt
+cut -d"#" -f-1 origin/adblockplus_easylist.txt |cut -d"+" -f-1 | cut -d"^" -f-1 | cut -d"$" -f-1 | cut -d"*" -f-1 | cut -d"," -f-1 | cut -d"~" -f-1 | cut -d"&" -f-1 | sed 's/|$script,~third-party//g;s/|,~third-party//g;s/|$stylesheet//g;s/$script//g;s/$third-party//g;s/^\x7C\x7C//;s/^@@//;s/^\x7C\x7C//;s/^@@//;/*/d;/#@#/d;s/^\x2f/##/;/##/d;/!/d;/*\x2f\x2f*/d;/^$/d;s/^\x2f/##/;/##/d;/^\x7C/d;/!/d' | cut -d"|" -f-1 > adblockplus_easylist.txt
+curl -o origin/adblockplus_fanboy-annoyance.txt https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt
+cut -d"#" -f-1 origin/adblockplus_fanboy-annoyance.txt |cut -d"+" -f-1 | cut -d"^" -f-1 | cut -d"$" -f-1 | cut -d"*" -f-1 | cut -d"," -f-1 | cut -d"~" -f-1 | cut -d"&" -f-1 | sed 's/|$script,~third-party//g;s/|,~third-party//g;s/|$stylesheet//g;s/$script//g;s/$third-party//g;s/^\x7C\x7C//;s/^@@//;s/^\x7C\x7C//;s/^@@//;/*/d;/#@#/d;s/^\x2f/##/;/##/d;/!/d;/*\x2f\x2f*/d;/^$/d;s/^\x2f/##/;/##/d;/^\x7C/d;/!/d' | cut -d"|" -f-1 > adblockplus_fanboy-annoyance.txt
+curl -o origin/adblockplus_advblock.txt https://easylist-downloads.adblockplus.org/advblock.txt
+cut -d"#" -f-1 origin/adblockplus_advblock.txt | cut -d"^" -f-1 | cut -d"$" -f-1 | cut -d"*" -f-1 | cut -d"," -f-1 | cut -d"~" -f-1 | cut -d"&" -f-1 | sed 's/|$script,~third-party//g;s/|,~third-party//g;s/|$stylesheet//g;s/$script//g;s/$third-party//g;s/^\x7C\x7C//;s/^@@//;s/^\x7C\x7C//;s/^@@//;/*/d;/#@#/d;s/^\x2f/##/;/##/d;/!/d;/*\x2f\x2f*/d;/^$/d;s/^\x2f/##/;/##/d;/^\x7C/d;/!/d' | cut -d"|" -f-1 > adblockplus_advblock.txt
+curl -o origin/adblockplus_antiadblockfilters.txt https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
+sed 's/|$script,~third-party//g;s/|,~third-party//g;s/|$stylesheet//g;s/$script//g;s/$third-party//g;s/^\x7C\x7C//;s/^@@//;s/^\x7C\x7C//;s/^@@//;/*/d;/#@#/d;s/^\x2f/##/;/##/d;/!/d' origin/adblockplus_antiadblockfilters.txt | cut -d"^" -f-1 > adblockplus_antiadblockfilters.txt
+curl -o origin/adblockplus_adwarefilters.txt https://easylist-downloads.adblockplus.org/adwarefilters.txt
+sed 's/$third-party//g' origin/adblockplus_adwarefilters.txt | sed 's/^\x7C\x7C//' | cut -d"^" -f-1 > adblockplus_adwarefilters.txt
+curl -o origin/adblockplus_yt_annoyances_full.txt https://easylist-downloads.adblockplus.org/yt_annoyances_full.txt
+cut -d"#" -f-1 origin/adblockplus_yt_annoyances_full.txt |cut -d"+" -f-1 | cut -d"^" -f-1 | cut -d"$" -f-1 | cut -d"*" -f-1 | cut -d"," -f-1 | cut -d"~" -f-1 | cut -d"&" -f-1 | sed 's/|$script,~third-party//g;s/|,~third-party//g;s/|$stylesheet//g;s/$script//g;s/$third-party//g;s/^\x7C\x7C//;s/^@@//;s/^\x7C\x7C//;s/^@@//;/*/d;/#@#/d;s/^\x2f/##/;/##/d;/!/d;/*\x2f\x2f*/d;/^$/d;s/^\x2f/##/;/##/d;/^\x7C/d;/!/d' | cut -d"|" -f-1 > adblockplus_yt_annoyances_full.txt
+
+
+curl -o origin/ https://www.fanboy.co.nz/adblock/opera/urlfilter.ini
+curl -o origin/ https://www.fanboy.co.nz/adblock/opera/rus/complete/urlfilter.ini
+curl -o origin/ http://www.fanboy.co.nz/adblock/fanboy-tracking.txt
+curl -o origin/ https://fanboy.co.nz/fanboy-antifacebook.txt
+curl -o origin/ https://fanboy.co.nz/r/fanboy-ultimate.txt
+
+curl -o origin\Dawsey21_adblock-list.txt https://raw.githubusercontent.com/Dawsey21/Lists/master/adblock-list.txt
+sed 's/^\x7C\x7C//' origin\Dawsey21_adblock-list.txt | cut -d"^" -f-1 > F:\Documents\BlackLists\Dawsey21_adblock-list.txt
+curl -o origin/metaphoricgiraffe_trackingfilters.txt https://raw.githubusercontent.com/metaphoricgiraffe/tracking-filters/master/trackingfilters.txt
+curl -o origin/ https://raw.githubusercontent.com/deathbybandaid/wally3k-adlists.list/master/adlists.list
+curl -o origin/ https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_all.list
+curl -o origin/ https://raw.githubusercontent.com/piperun/iploggerfilter/master/filterlist
+curl -o origin/ https://raw.githubusercontent.com/zpacman/Blockzilla/master/Blockzilla.txt
+curl -o origin/ https://raw.githubusercontent.com/LordBadmintonofYorkshire/Overlay-Blocker/master/blocklist.txt
+curl -o origin/ https://raw.githubusercontent.com/byaka/ublock-antiskimming-list/master/build/data.txt
+curl -o origin/ https://raw.githubusercontent.com/IDKwhattoputhere/uBlock-Filters-Plus/master/uBlock-Filters-Plus.txt
+curl -o origin/ https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt
+curl -o origin/ https://raw.githubusercontent.com/kbinani/adblock-youtube-ads/master/signed.txt
+
+curl -o origin/ https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext
+curl -o origin/ https://adguard.com/en/filter-rules.html?id=3
+curl -o origin/ https://easylist.to/easylist/easylist.txt
+curl -o origin/ https://adguard.com/en/filter-rules.html?id=11
+curl -o origin/ https://www.eff.org/files/cookieblocklist.txt
+curl -o origin/ https://adguard.com/en/filter-rules.html?id=15
+
+
+
