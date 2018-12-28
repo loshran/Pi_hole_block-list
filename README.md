@@ -17,6 +17,8 @@ https://github.com/loshran/Pi_hole_block-list/blob/master/My_UA_block_list.txt?r
 
 https://github.com/loshran/Pi_hole_block-list/blob/master/Microsoft_BlockList.txt?raw=true
 
+https://raw.githubusercontent.com/loshran/Pi_hole_block-list/master/PS.txt?raw=true
+
 original files since 20182402
 https://github.com/loshran/Pi_hole_block-list/blob/master/original%2020182402/_hosts.txt?raw=true
 
