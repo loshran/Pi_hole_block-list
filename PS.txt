@@ -6,7 +6,6 @@ twitch.tv
 cdn.irsdn.net
 i.ytimg.com
 sonycoment.loris-e.llnwd.net
-mastarti.com
 milka.api.wwsga.me
 milka.sbdnpd.com
 
@@ -29,6 +28,7 @@ friends.rnps.dl.playstation.net
 fswitch.dl.playstation.net
 fuk01.ps4.update.playstation.net
 gs-sec.ww.np.dl.playstation.net
+gs2-sec.ww.prod.dl.playstation.net
 horizon-static-np.s3.amazonaws.com
 horizon.api.wwsga.me
 id.sonyentertainmentnetwork.com
